@@ -138,6 +138,7 @@ spec:
 ...
 ```
 **Explanation**:
+
 [1] The name of the bridge interface
 
 [2] The name of the network. This value must match the `name` value of the corresponding `spec.template.spec.domain.devices.interfaces` entry

@@ -100,12 +100,12 @@ oc adm policy remove-role-from-group edit dev-team -n my-project
 ```
 
 ## Best Practices
-🚫 Never bind `cluster-admin` unless absolutely necessary.
-✅ Start with default roles (`view`, `edit`, `admin`) before creating custom roles.
-✅ Use cluster roles for broad permissions, and local roles for project-specific needs.
-✅ Avoid too many permissions: Grant only the minimum required access.
-✅ Use groups instead of individual users for easier management.
-✅ Audit roles with `oc describe role/<role-name>`.
+🚫 Never bind `cluster-admin` unless absolutely necessary. \n
+✅ Start with default roles (`view`, `edit`, `admin`) before creating custom roles. \n
+✅ Use cluster roles for broad permissions, and local roles for project-specific needs. \n
+✅ Avoid too many permissions: Grant only the minimum required access. \n
+✅ Use groups instead of individual users for easier management. \n
+✅ Audit roles with `oc describe role/<role-name>`. \n
 ✅ Test permissions with `oc auth can-i`:
 ```oc auth can-i delete pods --as user2 -n blue```
 

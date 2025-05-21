@@ -90,11 +90,15 @@ Create a secret with a CA certificate file (recommended).
 
 If your CA uses Intermediate Certificate Authorities, combine the certificates for all CAs in a ca.crt file. Run the following command:
 
-```$ cat intermediateCA.crt intermediateCA.crt rootCA.crt > ca.crt```
+```
+$ cat intermediateCA.crt intermediateCA.crt rootCA.crt > ca.crt
+```
 
 Create the secret:
 
-```$ oc create secret generic mycert --from-file=ca.crt=</path/to/file>```
+```
+$ oc create secret generic mycert --from-file=ca.crt=</path/to/file>
+```
 
 **NOTE: You must use the key name ca.crt.**
 

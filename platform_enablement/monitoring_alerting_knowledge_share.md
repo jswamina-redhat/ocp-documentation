@@ -171,6 +171,9 @@ Feel free to reach out to any of the Red Hat resources if you have any questions
 
 ## Relevant Documentation
 https://docs.openshift.com/container-platform/4.16/observability/monitoring/configuring-the-monitoring-stack.html#creating-cluster-monitoring-configmap_configuring-the-monitoring-stack
+
 https://docs.openshift.com/container-platform/4.15/observability/monitoring/config-map-reference-for-the-cluster-monitoring-operator.html#clustermonitoringconfiguration
+
 https://docs.redhat.com/en/documentation/openshift_container_platform/4.16/html/monitoring/managing-alerts#managing-alerts-as-an-administrator
+
 https://docs.redhat.com/en/documentation/openshift_container_platform/4.17/html/postinstallation_configuration/configuring-alert-notifications

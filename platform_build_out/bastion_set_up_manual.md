@@ -41,6 +41,8 @@ quay.io/openshift-release-dev/ocp-release@sha256:80078b22e5e6e215141bd8300c0e039
 
 E. Create temporary pull secret file with `$HOME/.pull-secret-temp` file
 
+> **_NOTE:_**  For information on creating pull secrets to obtain images from registries, view this [documentation](https://docs.redhat.com/en/documentation/openshift_container_platform/4.13/html/images/managing-images#using-image-pull-secrets)
+
 ```
 $ touch $HOME/.pull-secret-temp
 $ cp <PULL_SECRET> $HOME/.pull-secret-temp

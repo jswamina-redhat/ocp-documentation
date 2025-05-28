@@ -19,21 +19,18 @@ Key features of `etcd`:
 # Backing Up `etcd` Data
 Red Hat recommends backing up your cluster’s `etcd` data regularly and storing it in a secure location outside of the OpenShift environment. 
 
-[Info]
-Do not take an `etcd` backup prior to the first rotation of certificates (24 hours after initial install). Doing so will cause the backup to contain expired certificates.
 
-[Info]
-Taking `etcd` backups is a blocking action. Therefore it is recommended to take backups outside of peak usage hours. It is also important to take an `etcd` backup before cluster upgrades.
+> **_INFO:_** Do not take an `etcd` backup prior to the first rotation of certificates (24 hours after initial install). Doing so will cause the backup to contain expired certificates.
 
-[Warning]
-Back up your cluster’s etcd data by performing a single invocation of the backup script on a master host. Do not take a backup for each master host. Only save a backup from a single control plane host. Do not take a backup from each control plane host in the cluster.
+> **_INFO:_**  Taking `etcd` backups is a blocking action. Therefore it is recommended to take backups outside of peak usage hours. It is also important to take an `etcd` backup before cluster upgrades.
+
+> **_WARNING:_**  Back up your cluster’s etcd data by performing a single invocation of the backup script on a master host. Do not take a backup for each master host. Only save a backup from a single control plane host. Do not take a backup from each control plane host in the cluster.
 
 **Prerequisites**:
 - You have access to the cluster as a user with the cluster-admin role
 - You have checked whether the cluster-wide proxy is enabled
 
-[Note]
-You can check whether the proxy is enabled by reviewing the output of `oc get proxy cluster -o yaml`. The proxy is enabled if the `httpProxy`, `httpsProxy`, and `noProxy` fields have values set.
+> **_NOTE:_**  You can check whether the proxy is enabled by reviewing the output of `oc get proxy cluster -o yaml`. The proxy is enabled if the `httpProxy`, `httpsProxy`, and `noProxy` fields have values set.
 
 **Procedure:**
 1. Start a debug session
@@ -55,8 +52,7 @@ $ export NO_PROXY=.gm.com,localhost,127.0.0.1,10.0.0.0/8,172.0.0.0/8,198.0.0.0/8
 
 4. Run the `cluster-backup.sh` script in the debug shell and pass in the location to save the backup to
 
-[Info]
-The `cluster-backup.sh` script is maintained as a component of the `etcd` Cluster Operator and is a wrapper around the `etcdctl snapshot save` command
+> **_INFO:_**  The `cluster-backup.sh` script is maintained as a component of the `etcd` Cluster Operator and is a wrapper around the `etcdctl snapshot save` command
 ```
 sh-4.4# /usr/local/bin/cluster-backup.sh /home/core/assets/backup
 ```
@@ -84,8 +80,7 @@ In this example, two files are created in the `/home/core/assets/backup/` direct
 - `snapshot_<datetimestamp>.db`: This file is the etcd snapshot. The `cluster-backup.sh` script confirms its validity
 - `static_kuberesources_<datetimestamp>.tar.gz`: This file contains the resources for the static pods. If `etcd` encryption is enabled, it also contains the encryption keys for the etcd snapshot
 
-[Note]
-If `etcd` encryption is enabled, it is recommended to store this second file separately from the `etcd` snapshot for security reasons. However, this file is required to restore from the `etcd` snapshot.
+> **_INFO:_**  If `etcd` encryption is enabled, it is recommended to store this second file separately from the `etcd` snapshot for security reasons. However, this file is required to restore from the `etcd` snapshot.
 
 Keep in mind that `etcd` encryption only encrypts values, not keys. This means that resource types, namespaces, and object names are unencrypted.
 
@@ -96,8 +91,7 @@ This can be used to recover from the following situations:
 - The cluster has lost the majority of control plane hosts (quorum loss)
 - An administrator has deleted something critical and must restore to recover the cluster
 
-[Warning]
-Restoring to a previous cluster state is a destructive and destabilizing action to take on a running cluster. This should only be used as a last resort.
+> **_WARNING:_**  Restoring to a previous cluster state is a destructive and destabilizing action to take on a running cluster. This should only be used as a last resort.
 
 If you are able to retrieve data using the Kubernetes API server, then `etcd` is available and you should not restore using an etcd backup.
 

@@ -1,3 +1,8 @@
+# Purpose
+This document outlines how to upload images to OpenShift Container Platform
+
+# Procedure
+
 Helpful Utilities
 
 | Syntax | Description | Purpose |

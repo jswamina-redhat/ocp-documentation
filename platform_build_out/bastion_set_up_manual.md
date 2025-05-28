@@ -86,4 +86,5 @@ $ sudo usermod -a -G libvirt {{ INSTALL_USER }}
 ```
 
 5. Launch OpenShift Installer
+
 You may now launch the OpenShift installer

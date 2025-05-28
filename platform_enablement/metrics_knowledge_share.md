@@ -119,6 +119,9 @@ This was a basic rundown on how metrics are scraped in OpenShift Container Platf
 ## Relevant Documentation
 
 https://docs.redhat.com/en/documentation/openshift_container_platform/4.16/html/monitoring/managing-metrics#about-querying-metrics_managing-metrics
+
 https://prometheus.io/docs/introduction/overview/
+
 https://prometheus.io/docs/concepts/metric_types/
+
 https://prometheus.io/docs/prometheus/latest/querying/basics/

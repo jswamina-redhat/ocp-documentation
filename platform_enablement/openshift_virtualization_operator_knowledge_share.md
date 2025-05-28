@@ -34,7 +34,7 @@ You can deploy the OpenShift Virtualization Operator by using the OpenShift Cont
 
 ## OCP Web Console
 
-[!] Make sure you are logged in as a user with `cluster-admin` permissions
+> **_INFO:_**  Make sure you are logged in as a user with `cluster-admin` permissions
 
 **Procedure**
 1. Navigate to `Operators` > `OperatorHub`
@@ -58,7 +58,7 @@ Once all the pods display the Running state, you can use OpenShift Virtualizatio
 
 ## Command Line Interface
 
-[!] Make sure you are logged in as a user with cluster-admin permissions
+> **_INFO:_**  Make sure you are logged in as a user with cluster-admin permissions
 
 **Procedure**
 1. First configure the necessary `Namespace`, `OperatorGrou`p, and `Subscription` objects by applying the single manifest to your cluster

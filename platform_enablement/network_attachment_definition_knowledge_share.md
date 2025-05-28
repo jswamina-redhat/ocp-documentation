@@ -105,7 +105,7 @@ $ oc get network-attachment-definition <bridge-network>
 
 ## Configuring the Virtual Machine for a Linux Bridge Network
 
-[Info] Prerequisite: Shut down the VM before editing the configuration. If you edit a running VM, you must restart the VM for changes to take effect
+> **_INFO:_**  Prerequisite: Shut down the VM before editing the configuration. If you edit a running VM, you must restart the VM for changes to take effect
 
 **CLI YAML Procedure**:
 1. Create/edit a configuration of a virtual machine that you want to connect to the bridge network
@@ -148,7 +148,7 @@ spec:
 Apply the configuration:
 `$ oc apply -f <example-vm>.yaml`
 
-[Info] If the VM was running as you edited its configuration, make sure you restart the VM to apply the new configuration.
+> **_INFO:_**  If the VM was running as you edited its configuration, make sure you restart the VM to apply the new configuration.
 
 ## Creating a Linux Node Network Configuration
 
@@ -381,6 +381,9 @@ This was a brief overview of the Network Attachment Definition (NAD) custom Kube
 
 ## Relevant Documentation
 https://developers.redhat.com/articles/2024/12/19/how-configure-network-attachment-definitions#how_to_create_and_use_nads
+
 https://docs.redhat.com/en/documentation/openshift_container_platform/4.17/html/virtualization/virtual-machines#virt-creating-vms-from-rh-images-overview
+
 https://docs.redhat.com/en/documentation/openshift_container_platform/4.17/html/networking/index
+
 https://docs.redhat.com/en/documentation/openshift_container_platform/4.17/html/networking/multiple-networks#understanding-multiple-networks

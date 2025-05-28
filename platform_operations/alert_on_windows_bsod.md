@@ -1,3 +1,5 @@
+# Purpose
+
 This section describes OpenShift configuration that detects the Windows Blue Screen of Death (BSOD) and fires a Prometheus alert. The configuration includes two parts:
 
 1. Enable readiness probe for the virtual machine(s)

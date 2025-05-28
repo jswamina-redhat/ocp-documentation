@@ -100,7 +100,7 @@ Create the secret:
 $ oc create secret generic mycert --from-file=ca.crt=</path/to/file>
 ```
 
-**NOTE: You must use the key name ca.crt.**
+> **_NOTE:_**  You must use the key name ca.crt.**
 
 Alternatives
 

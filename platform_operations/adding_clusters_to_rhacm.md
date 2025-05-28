@@ -29,9 +29,9 @@ Navigate to `Infrastructure` > `Clusters` > `Import cluster`
 
 You will need to run the copied command on the target cluster (the cluster you are trying to add to RHACM).
 
-You can confirm that you are on the correct cluster by running oc cluster-info. This will return the api of the cluster you are on.
+You can confirm that you are on the correct cluster by running `oc cluster-info`. This will return the api of the cluster you are on.
 
-Additionally, make sure to run oc whoami to confirm you are logged in as your personal user on the appropriate cluster. 
+Additionally, make sure to run `oc whoami` to confirm you are logged in as your personal user on the appropriate cluster. 
 
 If not, run `oc login -u <USER> <OCP_API>` then input your password when prompted.
 

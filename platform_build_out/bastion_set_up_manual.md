@@ -5,7 +5,7 @@ $ mkdir /home/{{ INSTALL_USER }}/{{ CLUSTER_NAME }}
 
 2. Copy/Create install-config.yaml to installation file directory
 
-Review the following [documentation](https://docs.redhat.com/en/documentation/openshift_container_platform/4.17/html/deploying_installer-provisioned_clusters_on_bare_metal/ipi-install-installation-workflow#configuring-the-install-config-file_ipi-install-installation-workflow) for install-config.yaml configuration details.
+Review the following [documentation](https://docs.redhat.com/en/documentation/openshift_container_platform/4.17/html/deploying_installer-provisioned_clusters_on_bare_metal/ipi-install-installation-workflow#configuring-the-install-config-file_ipi-install-installation-workflow) for `install-config.yaml` configuration details.
 
 3. Download required OCP Binaries
 

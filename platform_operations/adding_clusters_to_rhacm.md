@@ -41,16 +41,16 @@ You will see multiple Kubernetes resources being created, it will take a little 
 
 # Verification
 
-## On the Target Cluster
+### On the Target Cluster
 1. Go to `Workloads` > `Pods`
 2. Change the namespace to `open-cluster-management-agent`
 3. Verify that there are pods that running
 
-## On the RHACM Cluster
+### On the RHACM Cluster
 1. Navigate to `Infrastructure` > `Clusters` > `Cluster list`
 2. Verify that you see the newly added cluster
 3. Check for a `Ready` status for the cluster
 4. Click on the cluster and verify everything under the `Nodes` and `Add-ons` tab has the `Available` status
 
 ### References
-https://docs.redhat.com/en/documentation/red_hat_advanced_cluster_management_for_kubernetes/2.2/html/manage_cluster/importing-a-target-managed-cluster-to-the-hub-cluster#importing-a-cluster
+[1](https://docs.redhat.com/en/documentation/red_hat_advanced_cluster_management_for_kubernetes/2.2/html/manage_cluster/importing-a-target-managed-cluster-to-the-hub-cluster#importing-a-cluster)

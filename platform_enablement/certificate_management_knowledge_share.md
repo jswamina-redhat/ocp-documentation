@@ -239,5 +239,7 @@ This was a brief rundown of how certificate management functions in OpenShift Co
 
 ## Relevant Documentation
 https://docs.redhat.com/en/documentation/openshift_container_platform/4.1/html/authentication/configuring-certificates#replacing-default-ingress
+
 https://docs.redhat.com/en/documentation/openshift_container_platform/3.11/html/day_two_operations_guide/admin-solutions-certificate-management
+
 https://docs.redhat.com/en/documentation/openshift_container_platform/4.17/html/security_and_compliance/cert-manager-operator-for-red-hat-openshift

@@ -10,6 +10,8 @@ There is one issue connected with such a migration plan. OpenShift checks that t
 
 A machine can be "moved" between namespaces in several steps. In the following examples, replace the `sourcens` with the name of the current VM namespace, `destns` with the name of the namespace the VM should be moved to. Replace the `example` with the name of your VM.
 
+# Steps for Moving VMs Between Namespaces
+
 First, shut down the virtual machine.
 
 Make a backup of the virtual machine definition:

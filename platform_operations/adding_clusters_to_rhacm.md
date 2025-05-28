@@ -1,10 +1,13 @@
+# Purpose
+This document outlines the required steps for adding an OpenShift cluster to Red Hat Advanced Cluster Management (RHACM).
+
 # Steps for Adding a Cluster to RHACM
 
 Log into your RHACM cluster
 
 Navigate to `Infrastructure` > `Clusters` > `Import cluster`
 
-## `Details` Page
+### `Details` Page
 
 1. Name: Input the name of your cluster
 2. Cluster set: `<>`
@@ -14,10 +17,10 @@ Navigate to `Infrastructure` > `Clusters` > `Import cluster`
   - `env=preprod` for preprod environments
 4. Import mode: Run import commands manually
 
-## `Automation` page
+### `Automation` page
 1. Automation template: `none` > click `Next`
 
-## `Review` page
+### `Review` page
 1. Review and validate info
 2. Click `Generate` command
 3. Copy the generated command

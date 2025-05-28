@@ -114,4 +114,5 @@ You should now understand what `etcd` backups are and how to backup your `etcd` 
 ## Relevant Documentation
 https://etcd.io/
 https://docs.redhat.com/en/documentation/openshift_container_platform/4.17/html/backup_and_restore/control-plane-backup-and-restore#backup-etcd
+
 https://gm-sdv.atlassian.net/wiki/spaces/IT/pages/429293626/High+Level+OCP+Cluster+Provisioning#Day-2-Configuration-(RH)

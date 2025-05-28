@@ -226,7 +226,11 @@ As always, don’t hesitate to reach out to the Red Hat team with any questions 
 
 ## Relevant Documentation
 https://docs.redhat.com/en/documentation/openshift_container_platform/4.9/html/logging/cluster-logging#cluster-logging
+
 https://docs.redhat.com/en/documentation/openshift_container_platform/4.12/html/logging/cluster-logging#cluster-logging
+
 https://docs.redhat.com/en/documentation/openshift_container_platform/4.12/html/logging/cluster-logging-deploying#cluster-logging-deploy-console_cluster-logging-deploying
+
 https://docs.redhat.com/en/documentation/openshift_container_platform/4.12/html/logging/log-collection-and-forwarding#log-forwarding
+
 https://docs.openshift.com/container-platform/4.16/observability/logging/logging-6.0/log6x-loki.html

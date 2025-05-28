@@ -41,12 +41,13 @@ userNameAttributes: [ uid]
 tolerateMemberNotFoundErrors: false
 tolerateMemberOutOfScopeErrors: false
 ```
-[Warning] This config only works if you have created a cron job as described below in Auto Syncing LDAP Groups 
-[Info] RFC2307 doesn’t support nested groups natively.
+> **_WARNING:_**  This config only works if you have created a cron job as described below in Auto Syncing LDAP Groups
+
+> **_INFO:_**  RFC2307 doesn’t support nested groups natively.
 
 ## Syncing LDAP Groups
 
-[Note] If you’d like to dry run these commands to see their results, omit the `--confirm` flag.
+> **_NOTE:_**  If you’d like to dry run these commands to see their results, omit the `--confirm` flag.
 
 To sync all groups from the LDAP server with OCP you can run
 
@@ -122,7 +123,7 @@ $ oc create -f ldap-sync-cluster-role-binding.yaml
 
 ### Define sync configuration config map YAML
 
-[Note] The `sync.yaml` field of this config map is just your LDAP sync config file from above.
+> **_NOTE:_**  The `sync.yaml` field of this config map is just your LDAP sync config file from above.
 ```
 kind: ConfigMap
 apiVersion: v1
@@ -246,4 +247,5 @@ oc logs -f jobs/<ldap-group-sync-pod>
 
 ## Relevant Documentation
 https://docs.redhat.com/en/documentation/openshift_container_platform/4.18/html/authentication_and_authorization/ldap-syncing#ldap-syncing
+
 https://docs.redhat.com/en/documentation/openshift_container_platform/4.17/html-single/nodes/index#nodes-nodes-jobs-creating-cron_nodes-nodes-jobs

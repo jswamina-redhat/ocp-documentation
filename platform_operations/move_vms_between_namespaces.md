@@ -1,3 +1,7 @@
+# Purpose
+This document will provide steps for moving VMs between namespaces in OpenShift Container Platform.
+
+# Introduction
 In Kubernetes, it is not possible to move objects between namespaces or rename existing namespaces. To "move" a virtual machine from one namespace to another we can migrate it using MTV. The migration will create a new virtual machine object in the target namespace. It will also copy all the VM disks.
 
 MTV can migrate virtual machines between two different OpenShift clusters. We can create a migration plan where the source and target provider are the same OpenShift cluster. Just the source and target namespaces will differ.

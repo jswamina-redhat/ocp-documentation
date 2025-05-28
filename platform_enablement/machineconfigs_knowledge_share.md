@@ -26,14 +26,14 @@ There are three daemon sets that OpenShift employs to simplify node management. 
 
 When a node does not fully match what the currently applied machine config specifies, it is in a state known as *configuration drift*. The Machine Config Daemon (MCD) regularly checks the nodes for configuration drift and when detected, will mark the node as `degraded` until an administrator corrects the node configuration.
 
-[Note] A degraded node is online and operational, but cannot be updated
+> **_NOTE:_**  A degraded node is online and operational, but cannot be updated
 
 The MCD performs configuration drift detection upon each of the following conditions:
 - When a node boots
 - After any of the files (Ignition files and systemd drop-in units) specified in the machine config are modified outside of the machine config
 - Before a new machine config is applied
 
-[Info] If you apply a new machine config to the nodes, the MCD temporarily shuts down configuration drift detection. This shutdown is needed because the new machine config necessarily differs from the machine config on the nodes. After the new machine config is applied, the MCD restarts detecting configuration drift using the new machine config.
+> **_NOTE:_**  If you apply a new machine config to the nodes, the MCD temporarily shuts down configuration drift detection. This shutdown is needed because the new machine config necessarily differs from the machine config on the nodes. After the new machine config is applied, the MCD restarts detecting configuration drift using the new machine config.
 
 ## MachineConfig Overview
 MCO manages updates to `systemd`, `CRI-O`, and `Kubelet`, the kernel, Network Manager and other system features. With a `MachineConfig` CRD, you can write configuration files onto the host.
@@ -199,5 +199,7 @@ This was a brief overview of what MachineConfigs are and how they work in OpenSh
 
 ## Relevant Documentation
 https://docs.redhat.com/en/documentation/openshift_container_platform/4.17/html/machine_configuration/machine-config-index
+
 https://docs.redhat.com/en/documentation/openshift_container_platform/4.17/html/machine_configuration/machine-configs-configure
+
 https://docs.redhat.com/en/documentation/openshift_container_platform/4.17/html/machine_configuration/machine-configs-custom
